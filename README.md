@@ -13,13 +13,14 @@ git clone https://github.com/apod/dotfiles.git ~/.dotfiles
 ## Module Installation
 
 ```sh
-stow -d ~/.dotfiles git
+stow -d ~/.dotfiles git zsh
 ```
 
 ## Available modules
 
 ```
 git     > Git global config, ignores and aliases
+zsh     > Zsh configuration using zplug
 ```
 
 ## Customize git
@@ -31,3 +32,8 @@ You can customize git locally by creating a `~/.gitconfig.local` file, that migh
 	name = Foo bar
 	email = foobar@example.com
 ```
+
+## Customize zsh
+
+You can customize the following files for zsh:
+- ~/.zshenv.local
