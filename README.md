@@ -36,4 +36,7 @@ You can customize git locally by creating a `~/.gitconfig.local` file, that migh
 ## Customize zsh
 
 You can customize the following files for zsh:
-- ~/.zshenv.local
+```
+~/.zshenv.local - for environment variables like PATH, MANPATH etc.
+~/.zshrc.local  - to add zsh plugins using zplug, or anything else zsh related
+```
