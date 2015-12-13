@@ -8,8 +8,9 @@
 	branch = auto
 	ui = auto
 [core]
-	excludesfile = ~/.gitignore-global
+	excludesfile = ~/.gitignore.global
 	editor = vim
 [push]
-	default = simple[include]
+	default = simple
+[include]
 	path = ~/.gitconfig.local
