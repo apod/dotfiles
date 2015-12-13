@@ -13,8 +13,7 @@ git clone https://github.com/apod/dotfiles.git ~/.dotfiles
 ## Module Installation
 
 ```sh
-cd ~/.dotfiles
-stow git
+stow -d ~/.dotfiles git
 ```
 
 ## Available modules
