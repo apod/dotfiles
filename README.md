@@ -29,7 +29,7 @@ git     > Git global config, ignores and aliases
 
 ## Customize git
 
-You can customize `.gitconfig` by creating a `.gitconfig.local` file, that might look like this:
+You can customize git locally by creating a `~/.gitconfig.local` file, that might look like this:
 
 ```
 [user]
