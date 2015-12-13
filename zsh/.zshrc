@@ -19,11 +19,11 @@ is_archlinux () {
 # If a pattern for filename generation has no matches leave it unchanged
 unsetopt nomatch
 
-# Plugins and bundles
 
 # Load local configuration
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+# Plugins and bundles
 zplug "plugins/git",  from:oh-my-zsh
 zplug "plugins/lein", from:oh-my-zsh
 
@@ -42,3 +42,6 @@ fi
 
 # Load plugins
 zplug load
+
+# Prompt Theme
+source ~/.zsh/themes/apod.zsh-theme
