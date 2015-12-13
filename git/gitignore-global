@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+.Spotlight-V100
+.Trashes
+desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# Other
+.svn
+*~
+*.swp

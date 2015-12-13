@@ -1,0 +1,14 @@
+[alias]
+	co = checkout
+	b = branch
+	l = log --graph --decorate --abbrev-commit --pretty=oneline -n 20
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore-global
+	editor = vim
+[push]
+	default = simple
