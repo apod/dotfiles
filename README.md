@@ -26,3 +26,13 @@ stow git
 ```
 git     > Git global config, ignores and aliases
 ```
+
+## Customize git
+
+You can customize `.gitconfig` by creating a `.gitconfig.local` file, that might look like this:
+
+```
+[user]
+	name = Foo bar
+	email = foobar@example.com
+```
