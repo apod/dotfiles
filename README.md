@@ -21,6 +21,7 @@ stow -d ~/.dotfiles git zsh
 ```
 git     > Git global config, ignores and aliases
 zsh     > Zsh configuration using zplug
+lein    > Leiningen configuration
 slate   > OSX - Slate (https://github.com/mattr-/slate) configuration
 ```
 
