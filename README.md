@@ -21,6 +21,7 @@ stow -d ~/.dotfiles git zsh
 ```
 git     > Git global config, ignores and aliases
 zsh     > Zsh configuration using zplug
+slate   > OSX-Slate window manager configuration (https://github.com/mattr-/slate)
 ```
 
 ## Customize git
