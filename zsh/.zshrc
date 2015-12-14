@@ -39,6 +39,8 @@ if is_archlinux; then
     zplug "junegunn/fzf-bin", as:command, from:gh-r, file:fzf, of:"*linux*amd64*"
 fi
 
+zplug "b4b4r07/enhancd", of:enhancd.sh
+
 # Install missing plugins
 if ! zplug check; then
     zplug install
