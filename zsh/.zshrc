@@ -25,16 +25,18 @@ DISABLE_AUTO_TITLE="true"
 # Load local configuration
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# Plugins and bundles
+# Commands, plugins and bundles
 zplug "plugins/git",  from:oh-my-zsh
 zplug "plugins/lein", from:oh-my-zsh
 
 if is_osx; then
     zplug "plugins/brew",  from:oh-my-zsh
+    zplug "junegunn/fzf-bin", as:command, from:gh-r, file:fzf, of:"*darwin*amd64*"
 fi
 
 if is_archlinux; then
     zplug "plugins/pacman",  from:oh-my-zsh
+    zplug "junegunn/fzf-bin", as:command, from:gh-r, file:fzf, of:"*linux*amd64*"
 fi
 
 # Install missing plugins
