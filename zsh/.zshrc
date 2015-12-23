@@ -49,5 +49,11 @@ fi
 # Load plugins
 zplug load
 
+# Keybindings
+bindkey "^[OA" up-line-or-history
+bindkey "^[OB" down-line-or-history
+bindkey "^P" up-line-or-beginning-search
+bindkey "^N" down-line-or-beginning-search
+
 # Prompt Theme
 source ~/.zsh/themes/apod.zsh-theme
