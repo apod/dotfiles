@@ -50,6 +50,11 @@ fi
 zplug load
 
 # Keybindings
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
 bindkey "^[OA" up-line-or-history
 bindkey "^[OB" down-line-or-history
 bindkey "^P" up-line-or-beginning-search
