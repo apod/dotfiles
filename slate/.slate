@@ -3,16 +3,32 @@ config defaultToCurrentScreen true
 
 # Monitor aliases
 alias mon-laptop 1440x900
+alias mon-asus 1920x1080
 
 # Position Aliases
 alias 1-full   move screenOriginX;screenOriginY                screenSizeX;screenSizeY       ${mon-laptop}
 alias 1-left   move screenOriginX;screenOriginY                screenSizeX/2;screenSizeY     ${mon-laptop}
 alias 1-right  move screenOriginX+screenSizeX/2;screenOriginY  screenSizeX/2;screenSizeY     ${mon-laptop}
 
+# Position Aliases
+alias 2-full   move screenOriginX;screenOriginY                screenSizeX;screenSizeY       ${mon-asus}
+alias 2-left   move screenOriginX;screenOriginY                screenSizeX/2;screenSizeY     ${mon-asus}
+alias 2-right  move screenOriginX+screenSizeX/2;screenOriginY  screenSizeX/2;screenSizeY     ${mon-asus}
+
+alias 2-left-third    move screenOriginX;screenOriginY                              screenSizeX/3;screenSizeY     ${mon-asus}
+alias 2-center-third  move screenOriginX+screenSizeX/3;screenOriginY                screenSizeX/3;screenSizeY     ${mon-asus}
+alias 2-right-third   move screenOriginX+screenSizeX/3+screenSizeX/3;screenOriginY  screenSizeX/3;screenSizeY     ${mon-asus}
+
 # Basic Keybindings
 bind f:alt ${1-full}
 bind h:alt ${1-left}
 bind l:alt ${1-right}
+bind f:alt,shift ${2-full}
+bind h:alt,shift ${2-left}
+bind l:alt,shift ${2-right}
+bind 1:alt,shift ${2-left-third}
+bind 2:alt,shift ${2-center-third}
+bind 3:alt,shift ${2-right-third}
 
 bind e:alt hint
 bind r:alt relaunch
