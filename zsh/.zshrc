@@ -58,3 +58,7 @@ bindkey "^N" down-line-or-beginning-search
 
 # Prompt Theme
 source ~/.zsh/themes/apod.zsh-theme
+
+# Aliases
+alias ls='ls --color=auto'
+alias l='ls -lah'
