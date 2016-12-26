@@ -37,6 +37,8 @@ if is_archlinux; then
     zplug "plugins/pacman",  from:oh-my-zsh
 fi
 
+zplug '~/.zsh/themes', as:theme, from:local
+
 # Install missing plugins
 if ! zplug check; then
     zplug install
@@ -55,9 +57,6 @@ bindkey "^[OA" up-line-or-history
 bindkey "^[OB" down-line-or-history
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
-
-# Prompt Theme
-source ~/.zsh/themes/apod.zsh-theme
 
 # Aliases
 alias ls='ls --color=auto'
