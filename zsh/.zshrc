@@ -1,9 +1,9 @@
 # Zplug
-if [ ! -f ~/.zplug/zplug ]; then
-    curl -fLo ~/.zplug/zplug --create-dirs git.io/zplug
+if [ ! -f ~/.zplug/init.zsh ]; then
+    curl -sL zplug.sh/installer | zsh
 fi
 
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 
 # OS Predicates
 is_osx () {
