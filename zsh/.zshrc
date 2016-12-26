@@ -30,13 +30,16 @@ zplug "plugins/git",  from:oh-my-zsh
 zplug "plugins/lein", from:oh-my-zsh
 
 if is_osx; then
-    zplug "plugins/brew",  from:oh-my-zsh
+    zplug "plugins/brew", from:oh-my-zsh
 fi
 
 if is_archlinux; then
-    zplug "plugins/pacman",  from:oh-my-zsh
+    zplug "plugins/pacman", from:oh-my-zsh
 fi
 
+zplug "supercrabtree/k"
+
+# Prompt theme
 zplug '~/.zsh/themes', as:theme, from:local
 
 # Install missing plugins
