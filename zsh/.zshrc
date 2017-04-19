@@ -19,6 +19,22 @@ is_archlinux () {
 # If a pattern for filename generation has no matches leave it unchanged
 unsetopt nomatch
 
+# History configuration
+if [ -z "$HISTFILE" ]; then
+    HISTFILE=$HOME/.zsh_history
+fi
+
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt append_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_verify
+setopt inc_append_history
+setopt share_history
+
 # Oh-my-zsh configuration
 DISABLE_AUTO_TITLE="true"
 
