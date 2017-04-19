@@ -77,6 +77,15 @@ bindkey "^[OB" down-line-or-history
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
 
+# ins / home / pgup
+bindkey "${terminfo[kich1]}" overwrite-mode
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kpp]}" up-history
+# del / end / pgdown
+bindkey "${terminfo[kdch1]}" delete-char
+bindkey "${terminfo[kend]}" end-of-line
+bindkey "${terminfo[knp]}" down-history
+
 # Aliases
 alias ls='ls --color=auto'
 alias l='ls -lah'
