@@ -55,6 +55,8 @@ fi
 
 zplug "supercrabtree/k"
 
+zplug "b4b4r07/enhancd", use:init.sh
+
 # Prompt theme
 zplug '~/.zsh/themes', as:theme, from:local
 
