@@ -1,0 +1,121 @@
+[options]
+allow_bold = true
+#audible_bell = false
+clickable_url = true
+dynamic_title = true
+font = M+ 1mn 12
+#fullscreen = true
+#geometry = 640x480
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+
+#foreground = #dcdccc
+#foreground_bold = #ffffff
+#background = #3f3f3f
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# If unset, will reverse foreground and background
+# highlight = #2f2f2f
+
+# Colors from color0 to color254 can be set
+# Default
+# color0 = #3f3f3f
+# color1 = #705050
+# color2 = #60b48a
+# color3 = #dfaf8f
+# color4 = #506070
+# color5 = #dc8cc3
+# color6 = #8cd0d3
+# color7 = #dcdccc
+# color8 = #709080
+# color9 = #dca3a3
+# color10 = #c3bf9f
+# color11 = #f0dfaf
+# color12 = #94bff3
+# color13 = #ec93d3
+# color14 = #93e0e3
+# color15 = #ffffff
+
+# Custom
+foreground = #aab2bf
+foreground_bold = #aab2bf
+background = #1c1c1c
+
+cursor = #aab2bf
+color0 = #000000
+color1 = #e06c75
+color9 = #e06c75
+color2 = #708f59
+color10 = #C3E88D
+color3 = #848549
+color4 = #4b87b9
+color5 = #985caa
+color6 = #438f98
+color7 = #7a8089
+color8 = #3a3a3a
+color11 = #e8ea81
+color12 = #61afef
+color13 = #c678dd
+color14 = #56b6c2
+color15 = #aab2bf
+
+color0 = #151718
+color1 = #cd3f45
+color2 = #9fca56
+color3 = #e6cd69
+color4 = #55b5db
+color5 = #a074c4
+color6 = #55dbbe
+color7 = #d6d6d6
+color8 = #4153b
+color9 = #cd3f45
+color10 = #9fca56
+color11 = #e6cd69
+color12 = #55b5db
+color13 = #a074c4
+color14 = #55dbbe
+color15 = #ffffff
+
+[hints]
+font = M+ 1mn 11
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
