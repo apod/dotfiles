@@ -24,7 +24,6 @@ zsh     > Zsh configuration using zplug
 lein    > Leiningen configuration
 termite > Termite configuration
 ruby    > Ruby configuration
-slate   > OSX - Slate (https://github.com/mattr-/slate) configuration
 ```
 
 ## Customize git
