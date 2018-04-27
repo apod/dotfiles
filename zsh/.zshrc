@@ -91,3 +91,9 @@ bindkey "${terminfo[knp]}" down-history
 # Aliases
 alias ls='ls --color=auto'
 alias l='ls -lah'
+
+if is_archlinux; then
+	alias cbcopy='xclip -in -selection clipboard'
+	alias cbpaste='xclip -out -selection clipboard'
+	alias open='gio open'
+fi
