@@ -1,6 +1,6 @@
 # dotfiles
 
-My personal dotfiles using [stow](https://www.gnu.org/software/stow/) and [zplug](https://github.com/b4b4r07/zplug).
+My personal dotfiles using [stow](https://www.gnu.org/software/stow/).
 
 ## Installation
 
@@ -20,7 +20,7 @@ stow -d ~/.dotfiles git zsh
 
 ```
 git     > Git global config, ignores and aliases
-zsh     > Zsh configuration using zplug
+zsh     > Zsh configuration
 lein    > Leiningen configuration
 termite > Termite configuration
 ruby    > Ruby configuration
@@ -41,5 +41,5 @@ You can customize git locally by creating a `~/.gitconfig.local` file, that migh
 You can customize the following files for zsh:
 ```
 ~/.zshenv.local - for environment variables like PATH, MANPATH etc.
-~/.zshrc.local  - to add zsh plugins using zplug, or anything else zsh related
+~/.zshrc.local  - to add zsh plugins, or anything else zsh related
 ```
