@@ -37,6 +37,15 @@ setopt prompt_subst
 source ~/.zsh/lib/git.zsh
 source ~/.zsh/themes/apod.zsh-theme
 
+# Title
+case $TERM in
+  xterm*)
+    precmd () {
+        print -Pn "\e]0;%~\a"
+    }
+    ;;
+esac
+
 # Aliases
 
 # Navigation
