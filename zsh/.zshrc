@@ -30,6 +30,13 @@ zle -N down-line-or-beginning-search
 bindkey "^P" up-line-or-beginning-search
 bindkey "^N" down-line-or-beginning-search
 
+# Prompt
+autoload -U colors && colors
+setopt prompt_subst
+
+source ~/.zsh/lib/git.zsh
+source ~/.zsh/themes/apod.zsh-theme
+
 # Aliases
 
 # Navigation
