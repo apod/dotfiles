@@ -1,12 +1,3 @@
-# OS Predicates
-is_osx () {
-    [[ $('uname') == 'Darwin' ]]
-}
-
-is_archlinux () {
-    [[ -a /etc/arch-release ]]
-}
-
 # Zsh configuration
 
 # If a pattern for filename generation has no matches leave it unchanged
