@@ -43,11 +43,21 @@ bindkey "${terminfo[kend]}" end-of-line
 bindkey "${terminfo[knp]}" down-history
 
 # Aliases
+
+# Navigation
 alias ls='ls --color=auto'
 alias l='ls -lah'
+alias ..='cd ..'
+alias ....='cd ../..'
 
-if is_archlinux; then
-	alias cbcopy='xclip -in -selection clipboard'
-	alias cbpaste='xclip -out -selection clipboard'
-	alias open='gio open'
-fi
+# Clipboard
+alias cbcopy='xclip -in -selection clipboard'
+alias cbpaste='xclip -out -selection clipboard'
+
+# Git
+alias gst='git status'
+alias grt='cd "$(git rev-parse --show-toplevel || echo .)"'
+
+# System
+# alias open='gio open'
+
