@@ -22,6 +22,8 @@ setopt share_history
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # Keybindings
+bindkey -e # emacs keybindings
+
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
