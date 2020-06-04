@@ -47,5 +47,6 @@ alias gst='git status'
 alias grt='cd "$(git rev-parse --show-toplevel || echo .)"'
 
 # System
-# alias open='gio open'
-
+if (( $+commands[gio] )); then
+    alias open='gio open'
+fi
